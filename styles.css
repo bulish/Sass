@@ -5,4 +5,9 @@
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
 }
+
+h1 {
+  font-size: 3rem;
+  color: #0d315f;
+}
 /*# sourceMappingURL=styles.css.map */
