@@ -3,7 +3,7 @@
     "mappings": "ACAA,AAAA,EAAE,CAAC;EACD,KAAK,EAAE,GAAG;EACV,SAAS,EAAE,IAAI;EACf,WAAW,EAAE,GAAG;CACjB",
     "sources": [
         "main.scss",
-        "_font.scss"
+        "_fonts.scss"
     ],
     "names": [],
     "file": "main.css"
