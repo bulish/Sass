@@ -2,38 +2,21 @@
 
 // Headings:
 
-h1, h2, h3, h4, h5, h6 {
+@each $key, $value in $heading__sizes
+{
+  #{$key}
+  {
+    font-size: $value;
     margin-bottom: 1rem;
+  }
 }
 
-h1 {
-    font-size: $h1_size;
-    color: $h1__color;
-}
-
-h2 {
-    font-size: $h2_size;
-    color: $h2__color;
-}
-
-h3 {
-    font-size: $h3_size;
-    color: $h3__color;
-}
-
-h4 {
-    font-size: $h4_size;
-    color: $h4__color;
-}
-
-h5 {
-    font-size: $h5_size;
-    color: $h5__color;
-}
-
-h6 {
-    font-size: $h6_size;
-    color: $h6__color;
+@each $key, $value in $heading__colors
+{
+  #{$key}
+  {
+   color: $value;
+  }
 }
 
 // Paragraphs:

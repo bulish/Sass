@@ -1,36 +1,56 @@
 /********** COLORS **********/
 /********** SIZES **********/
-h1, h2, h3, h4, h5, h6 {
-  margin-bottom: 1rem;
-}
-
 h1 {
   font-size: clamp(2.2rem, 4.5vw, 5rem);
-  color: #0c3953;
+  margin-bottom: 1rem;
 }
 
 h2 {
   font-size: clamp(2rem, 4vw, 4.5rem);
-  color: #094c72;
+  margin-bottom: 1rem;
 }
 
 h3 {
   font-size: clamp(1.8rem, 3.5vw, 4rem);
-  color: #055a8c;
+  margin-bottom: 1rem;
 }
 
 h4 {
   font-size: clamp(1.6rem, 3vw, 3.5rem);
-  color: #026aa7;
+  margin-bottom: 1rem;
 }
 
 h5 {
   font-size: clamp(1.4rem, 2.5vw, 3rem);
-  color: #0079bf;
+  margin-bottom: 1rem;
 }
 
 h6 {
   font-size: clamp(1.2rem, 2vw, 2.5rem);
+  margin-bottom: 1rem;
+}
+
+h1 {
+  color: #0c3953;
+}
+
+h2 {
+  color: #094c72;
+}
+
+h3 {
+  color: #055a8c;
+}
+
+h4 {
+  color: #026aa7;
+}
+
+h5 {
+  color: #0079bf;
+}
+
+h6 {
   color: #298fca;
 }
 
