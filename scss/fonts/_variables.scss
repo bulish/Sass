@@ -1,3 +1,44 @@
-h1 {
-  font-size: 2rem;
-}
+/********** COLORS **********/
+
+// Headings:
+
+$h1__color: #0c3953;
+$h2__color: #094c72;
+$h3__color: #055a8c;
+$h4__color: #026aa7;
+$h5__color: #0079bf;
+$h6__color: #298fca;
+
+// Paragraphs:
+
+$p__color: rgb(37, 37, 37);
+
+// Span:
+
+$span__colors: (
+  span1: #eb1d49,
+  span2: #aa2068,
+  span3: #924F96,
+  span4: #5c46d6,
+  span5: #480c5f,
+  span6: #5597c0
+);
+
+/********** SIZES **********/
+
+// Headings:
+
+$h1_size: clamp(2.2rem, 4.5vw, 5rem);
+$h2_size: clamp(2rem, 4vw, 4.5rem);
+$h3_size: clamp(1.8rem, 3.5vw, 4rem);
+$h4_size: clamp(1.6rem, 3vw, 3.5rem);
+$h5_size: clamp(1.4rem, 2.5vw, 3rem);
+$h6_size: clamp(1.2rem, 2vw, 2.5rem);
+
+// Paragraphs:
+
+$p__size: clamp(1rem, 1vw, 2rem);
+
+// Span:
+
+$span__size: clamp(1.15rem, 1.2vw, 2.3rem);

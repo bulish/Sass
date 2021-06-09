@@ -1,0 +1,59 @@
+@import "./variables";
+
+// Headings:
+
+h1, h2, h3, h4, h5, h6 {
+    margin-bottom: 1rem;
+}
+
+h1 {
+    font-size: $h1_size;
+    color: $h1__color;
+}
+
+h2 {
+    font-size: $h2_size;
+    color: $h2__color;
+}
+
+h3 {
+    font-size: $h3_size;
+    color: $h3__color;
+}
+
+h4 {
+    font-size: $h4_size;
+    color: $h4__color;
+}
+
+h5 {
+    font-size: $h5_size;
+    color: $h5__color;
+}
+
+h6 {
+    font-size: $h6_size;
+    color: $h6__color;
+}
+
+// Paragraphs:
+
+p {
+    font-size: $p__size;
+    color: $p__color;
+    &:nth-child(3n){
+        margin-bottom: 2rem;
+    }
+}
+
+// Span:
+
+@each $key, $value in $span__colors
+{
+  .#{$key}
+  {
+    color: $value;
+    font-weight: bold;
+    font-size: $span__size;
+  }
+}
