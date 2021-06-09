@@ -66,37 +66,37 @@ p:nth-child(3n) {
 .span1 {
   color: #eb1d49;
   font-weight: bold;
-  font-size: clamp(1.15rem, 1.2vw, 2.3rem);
+  font-size: clamp(1.05rem, 1.1vw, 2.3rem);
 }
 
 .span2 {
   color: #aa2068;
   font-weight: bold;
-  font-size: clamp(1.15rem, 1.2vw, 2.3rem);
+  font-size: clamp(1.05rem, 1.1vw, 2.3rem);
 }
 
 .span3 {
   color: #924F96;
   font-weight: bold;
-  font-size: clamp(1.15rem, 1.2vw, 2.3rem);
+  font-size: clamp(1.05rem, 1.1vw, 2.3rem);
 }
 
 .span4 {
   color: #5c46d6;
   font-weight: bold;
-  font-size: clamp(1.15rem, 1.2vw, 2.3rem);
+  font-size: clamp(1.05rem, 1.1vw, 2.3rem);
 }
 
 .span5 {
   color: #480c5f;
   font-weight: bold;
-  font-size: clamp(1.15rem, 1.2vw, 2.3rem);
+  font-size: clamp(1.05rem, 1.1vw, 2.3rem);
 }
 
 .span6 {
   color: #5597c0;
   font-weight: bold;
-  font-size: clamp(1.15rem, 1.2vw, 2.3rem);
+  font-size: clamp(1.05rem, 1.1vw, 2.3rem);
 }
 
 * {
