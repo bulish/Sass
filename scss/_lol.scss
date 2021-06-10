@@ -1,0 +1,51 @@
+$btn-black: #0f0f0f;
+$btn-darker: #000;
+$btn-white: #f7f7f7;
+$btn-lighter: #fff;
+$btn-green: rgb(0, 255, 128);
+$btn-blue: #000;
+$btn-red: #000;
+
+@mixin btnsPadding($paddingTD, $paddingLR) {
+  padding: $paddingTD $paddingLR;
+}
+@mixin backgroundColour($bgColour, $bgHover) {
+  background: $bgColour;
+  &:hover {
+    background: $bgHover;
+  }
+}
+@mixin fontColour($fontColour, $fontColourHover) {
+  color: $fontColour;
+  &:hover {
+    color: $fontColourHover;
+  }
+}
+@mixin fontSize($fontSize, $fontSizeHover) {
+  font-size: $fontSize;
+  &:hover {
+    font-size: $fontSizeHover;
+  }
+}
+
+.btns-sekce {
+  height: 100vh;
+  background: rgb(235, 235, 235);
+  .col-2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 25vh;
+    border: 1px solid $btn-black;
+    a {
+      text-decoration: none !important;
+    }
+  }
+}
+
+.btn-1 {
+  @include btnsPadding(5rem, 2rem);
+  @include backgroundColour($btn-black, $btn-darker);
+  @include fontColour($btn-white, $btn-green);
+  @include fontSize(2rem, 3rem);
+}
