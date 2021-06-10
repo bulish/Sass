@@ -41,11 +41,117 @@
   font-size: 1rem;
 }
 
+/********** COLORS **********/
+/********** SIZES **********/
+h1 {
+  font-size: clamp(2.2rem, 4.5vw, 5rem);
+  margin-bottom: 1rem;
+}
+
+h2 {
+  font-size: clamp(2rem, 4vw, 4.5rem);
+  margin-bottom: 1rem;
+}
+
+h3 {
+  font-size: clamp(1.8rem, 3.5vw, 4rem);
+  margin-bottom: 1rem;
+}
+
+h4 {
+  font-size: clamp(1.6rem, 3vw, 3.5rem);
+  margin-bottom: 1rem;
+}
+
+h5 {
+  font-size: clamp(1.4rem, 2.5vw, 3rem);
+  margin-bottom: 1rem;
+}
+
+h6 {
+  font-size: clamp(1.2rem, 2vw, 2.5rem);
+  margin-bottom: 1rem;
+}
+
+h1 {
+  color: #0c3953;
+}
+
+h2 {
+  color: #094c72;
+}
+
+h3 {
+  color: #055a8c;
+}
+
+h4 {
+  color: #026aa7;
+}
+
+h5 {
+  color: #0079bf;
+}
+
+h6 {
+  color: #298fca;
+}
+
+p {
+  font-size: clamp(1rem, 1vw, 2rem);
+  color: #252525;
+}
+
+p:nth-child(3n) {
+  margin-bottom: 2rem;
+}
+
+.span1 {
+  color: #eb1d49;
+  font-weight: bold;
+  font-size: clamp(1.05rem, 1.1vw, 2.3rem);
+}
+
+.span2 {
+  color: #aa2068;
+  font-weight: bold;
+  font-size: clamp(1.05rem, 1.1vw, 2.3rem);
+}
+
+.span3 {
+  color: #924F96;
+  font-weight: bold;
+  font-size: clamp(1.05rem, 1.1vw, 2.3rem);
+}
+
+.span4 {
+  color: #5c46d6;
+  font-weight: bold;
+  font-size: clamp(1.05rem, 1.1vw, 2.3rem);
+}
+
+.span5 {
+  color: #480c5f;
+  font-weight: bold;
+  font-size: clamp(1.05rem, 1.1vw, 2.3rem);
+}
+
+.span6 {
+  color: #5597c0;
+  font-weight: bold;
+  font-size: clamp(1.05rem, 1.1vw, 2.3rem);
+}
+
+/********** COLORS **********/
+/********** SIZES **********/
 * {
   padding: 0;
   margin: 0;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
-  list-style-type: none;
+}
+
+main {
+  padding: 3rem;
 }
 /*# sourceMappingURL=style.css.map */
