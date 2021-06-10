@@ -27,6 +27,10 @@ $btn-red: #000;
     font-size: $fontSizeHover;
   }
 }
+@mixin border($borderRadius, $border) {
+  border-radius: $borderRadius;
+  border: $border;
+}
 
 .btns-sekce {
   height: 100vh;
@@ -44,8 +48,9 @@ $btn-red: #000;
 }
 
 .btn-1 {
-  @include btnsPadding(5rem, 2rem);
+  @include btnsPadding(0.5rem, 1.5rem);
   @include backgroundColour($btn-black, $btn-darker);
   @include fontColour($btn-white, $btn-green);
-  @include fontSize(2rem, 3rem);
+  @include fontSize(1rem, 1rem);
+  border-radius: 15px;
 }
