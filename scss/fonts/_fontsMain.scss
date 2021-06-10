@@ -1,40 +1,33 @@
-@import "./variables";
-
 // Headings:
+@import "../variables/variables";
 
-@each $key, $value in $heading__sizes
-{
-  #{$key}
-  {
+@each $key, $value in $heading__sizes {
+  #{$key} {
     font-size: $value;
     margin-bottom: 1rem;
   }
 }
 
-@each $key, $value in $heading__colors
-{
-  #{$key}
-  {
-   color: $value;
+@each $key, $value in $heading__colors {
+  #{$key} {
+    color: $value;
   }
 }
 
 // Paragraphs:
 
 p {
-    font-size: $p__size;
-    color: $p__color;
-    &:nth-child(3n){
-        margin-bottom: 2rem;
-    }
+  font-size: $p__size;
+  color: $p__color;
+  &:nth-child(3n) {
+    margin-bottom: 2rem;
+  }
 }
 
 // Span:
 
-@each $key, $value in $span__colors
-{
-  .#{$key}
-  {
+@each $key, $value in $span__colors {
+  .#{$key} {
     color: $value;
     font-weight: bold;
     font-size: $span__size;

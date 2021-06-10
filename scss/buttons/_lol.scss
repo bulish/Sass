@@ -1,10 +1,22 @@
-$btn-black: #0f0f0f;
-$btn-darker: #000;
-$btn-white: #f7f7f7;
-$btn-lighter: #fff;
-$btn-green: rgb(0, 255, 128);
-$btn-blue: #000;
-$btn-red: #000;
+//button colors
+$btn-red: #ff0000;
+$btn-black: #000;
+$btn-white: #ffffff;
+$btn-yellow: #fffb00;
+$btn-green: #00ff6e;
+$btn-turquoise: #51e8ed;
+$btn-light-blue: #54aff7;
+$btn-blue: #576ce0;
+$btn-pink: #d290f0;
+$btn-dark-pink: #b156e8;
+$btn-purple: #8054f7;
+
+//border-radius sizes
+$no-radius: 0px;
+$mini-radius: 3px;
+$small-radius: 7px;
+$medium-radius: 10px;
+$big-radius: 15px;
 
 @mixin btnsPadding($paddingTD, $paddingLR) {
   padding: $paddingTD $paddingLR;
@@ -39,18 +51,233 @@ $btn-red: #000;
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 25vh;
-    border: 1px solid $btn-black;
+    height: 20vh;
+    border: 0.5px solid black;
     a {
       text-decoration: none !important;
+      transition: all 0.2s ease-in;
     }
   }
 }
 
-.btn-1 {
-  @include btnsPadding(0.5rem, 1.5rem);
-  @include backgroundColour($btn-black, $btn-darker);
-  @include fontColour($btn-white, $btn-green);
-  @include fontSize(1rem, 1rem);
-  border-radius: 15px;
+.no-radius {
+  .btn-1 {
+    @include backgroundColour($btn-blue, $btn-purple);
+    @include fontColour($btn-white, $btn-white);
+    @include fontSize(1rem, 1rem);
+    @include btnsPadding(0.15rem, 1.15rem);
+    border-radius: $no-radius;
+  }
+  .btn-2 {
+    @include backgroundColour($btn-blue, $btn-purple);
+    @include fontColour($btn-white, $btn-white);
+    @include fontSize(1rem, 1rem);
+    @include btnsPadding(0.2rem, 1.2rem);
+    border-radius: $no-radius;
+  }
+  .btn-3 {
+    @include backgroundColour($btn-blue, $btn-purple);
+    @include fontColour($btn-white, $btn-white);
+    @include fontSize(1rem, 1rem);
+    @include btnsPadding(0.25rem, 1.25rem);
+    border-radius: $no-radius;
+  }
+  .btn-4 {
+    @include backgroundColour($btn-blue, $btn-purple);
+    @include fontColour($btn-white, $btn-white);
+    @include fontSize(1rem, 1rem);
+    @include btnsPadding(0.3rem, 1.3rem);
+    border-radius: $no-radius;
+  }
+  .btn-5 {
+    @include backgroundColour($btn-blue, $btn-purple);
+    @include fontColour($btn-white, $btn-white);
+    @include fontSize(1rem, 1rem);
+    @include btnsPadding(0.35rem, 1.35rem);
+    border-radius: $no-radius;
+  }
+  .btn-6 {
+    @include backgroundColour($btn-blue, $btn-purple);
+    @include fontColour($btn-white, $btn-white);
+    @include fontSize(1rem, 1rem);
+    @include btnsPadding(0.45rem, 1.45rem);
+    border-radius: $no-radius;
+  }
+}
+
+.mini-radius {
+  .btn-1 {
+    @include backgroundColour($btn-light-blue, $btn-turquoise);
+    @include fontColour($btn-white, $btn-white);
+    @include fontSize(1rem, 1rem);
+    @include btnsPadding(0.15rem, 1.15rem);
+    border-radius: $mini-radius;
+  }
+  .btn-2 {
+    @include backgroundColour($btn-light-blue, $btn-turquoise);
+    @include fontColour($btn-white, $btn-white);
+    @include fontSize(1rem, 1rem);
+    @include btnsPadding(0.2rem, 1.2rem);
+    border-radius: $mini-radius;
+  }
+  .btn-3 {
+    @include backgroundColour($btn-light-blue, $btn-turquoise);
+    @include fontColour($btn-white, $btn-white);
+    @include fontSize(1rem, 1rem);
+    @include btnsPadding(0.25rem, 1.25rem);
+    border-radius: $mini-radius;
+  }
+  .btn-4 {
+    @include backgroundColour($btn-light-blue, $btn-turquoise);
+    @include fontColour($btn-white, $btn-white);
+    @include fontSize(1rem, 1rem);
+    @include btnsPadding(0.3rem, 1.3rem);
+    border-radius: $mini-radius;
+  }
+  .btn-5 {
+    @include backgroundColour($btn-light-blue, $btn-turquoise);
+    @include fontColour($btn-white, $btn-white);
+    @include fontSize(1rem, 1rem);
+    @include btnsPadding(0.35rem, 1.35rem);
+    border-radius: $mini-radius;
+  }
+  .btn-6 {
+    @include backgroundColour($btn-light-blue, $btn-turquoise);
+    @include fontColour($btn-white, $btn-white);
+    @include fontSize(1rem, 1rem);
+    @include btnsPadding(0.4rem, 1.4rem);
+    border-radius: $mini-radius;
+  }
+}
+.small-radius {
+  .btn-1 {
+    @include backgroundColour($btn-pink, $btn-purple);
+    @include fontColour($btn-white, $btn-white);
+    @include fontSize(1rem, 1rem);
+    @include btnsPadding(0.15rem, 1.15rem);
+    border-radius: $small-radius;
+  }
+  .btn-2 {
+    @include backgroundColour($btn-pink, $btn-purple);
+    @include fontColour($btn-white, $btn-white);
+    @include fontSize(1rem, 1rem);
+    @include btnsPadding(0.2rem, 1.2rem);
+    border-radius: $small-radius;
+  }
+  .btn-3 {
+    @include backgroundColour($btn-pink, $btn-purple);
+    @include fontColour($btn-white, $btn-white);
+    @include fontSize(1rem, 1rem);
+    @include btnsPadding(0.25rem, 1.25rem);
+    border-radius: $small-radius;
+  }
+  .btn-4 {
+    @include backgroundColour($btn-pink, $btn-purple);
+    @include fontColour($btn-white, $btn-white);
+    @include fontSize(1rem, 1rem);
+    @include btnsPadding(0.3rem, 1.3rem);
+    border-radius: $small-radius;
+  }
+  .btn-5 {
+    @include backgroundColour($btn-pink, $btn-purple);
+    @include fontColour($btn-white, $btn-white);
+    @include fontSize(1rem, 1rem);
+    @include btnsPadding(0.35rem, 1.35rem);
+    border-radius: $small-radius;
+  }
+  .btn-6 {
+    @include backgroundColour($btn-pink, $btn-purple);
+    @include fontColour($btn-white, $btn-white);
+    @include fontSize(1rem, 1rem);
+    @include btnsPadding(0.4rem, 1.4rem);
+    border-radius: $small-radius;
+  }
+}
+.medium-radius {
+  .btn-1 {
+    @include backgroundColour($btn-purple, $btn-pink);
+    @include fontColour($btn-white, $btn-white);
+    @include fontSize(1rem, 1rem);
+    @include btnsPadding(0.15rem, 1.15rem);
+    border-radius: $medium-radius;
+  }
+  .btn-2 {
+    @include backgroundColour($btn-purple, $btn-pink);
+    @include fontColour($btn-white, $btn-white);
+    @include fontSize(1rem, 1rem);
+    @include btnsPadding(0.2rem, 1.2rem);
+    border-radius: $medium-radius;
+  }
+  .btn-3 {
+    @include backgroundColour($btn-purple, $btn-pink);
+    @include fontColour($btn-white, $btn-white);
+    @include fontSize(1rem, 1rem);
+    @include btnsPadding(0.25rem, 1.25rem);
+    border-radius: $medium-radius;
+  }
+  .btn-4 {
+    @include backgroundColour($btn-purple, $btn-pink);
+    @include fontColour($btn-white, $btn-white);
+    @include fontSize(1rem, 1rem);
+    @include btnsPadding(0.3rem, 1.3rem);
+    border-radius: $medium-radius;
+  }
+  .btn-5 {
+    @include backgroundColour($btn-purple, $btn-pink);
+    @include fontColour($btn-white, $btn-white);
+    @include fontSize(1rem, 1rem);
+    @include btnsPadding(0.35rem, 1.35rem);
+    border-radius: $medium-radius;
+  }
+  .btn-6 {
+    @include backgroundColour($btn-purple, $btn-pink);
+    @include fontColour($btn-white, $btn-white);
+    @include fontSize(1rem, 1rem);
+    @include btnsPadding(0.4rem, 1.4rem);
+    border-radius: $medium-radius;
+  }
+}
+.big-radius {
+  .btn-1 {
+    @include backgroundColour($btn-dark-pink, $btn-purple);
+    @include fontColour($btn-white, $btn-white);
+    @include fontSize(1rem, 1rem);
+    @include btnsPadding(0.15rem, 1.15rem);
+    border-radius: $medium-radius;
+  }
+  .btn-2 {
+    @include backgroundColour($btn-dark-pink, $btn-purple);
+    @include fontColour($btn-white, $btn-white);
+    @include fontSize(1rem, 1rem);
+    @include btnsPadding(0.2rem, 1.2rem);
+    border-radius: $medium-radius;
+  }
+  .btn-3 {
+    @include backgroundColour($btn-dark-pink, $btn-purple);
+    @include fontColour($btn-white, $btn-white);
+    @include fontSize(1rem, 1rem);
+    @include btnsPadding(0.25rem, 1.25rem);
+    border-radius: $medium-radius;
+  }
+  .btn-4 {
+    @include backgroundColour($btn-dark-pink, $btn-purple);
+    @include fontColour($btn-white, $btn-white);
+    @include fontSize(1rem, 1rem);
+    @include btnsPadding(0.3rem, 1.3rem);
+    border-radius: $medium-radius;
+  }
+  .btn-5 {
+    @include backgroundColour($btn-dark-pink, $btn-purple);
+    @include fontColour($btn-white, $btn-white);
+    @include fontSize(1rem, 1rem);
+    @include btnsPadding(0.35rem, 1.35rem);
+    border-radius: $medium-radius;
+  }
+  .btn-6 {
+    @include backgroundColour($btn-dark-pink, $btn-purple);
+    @include fontColour($btn-white, $btn-white);
+    @include fontSize(1rem, 1rem);
+    @include btnsPadding(0.4rem, 1.4rem);
+    border-radius: $medium-radius;
+  }
 }

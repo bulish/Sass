@@ -1,4 +1,5 @@
 /********** COLORS **********/
+// Button-sizes:
 
 // Headings:
 
@@ -8,7 +9,7 @@ $heading__colors: (
   h3: #055a8c,
   h4: #026aa7,
   h5: #0079bf,
-  h6: #298fca
+  h6: #298fca,
 );
 
 // Paragraphs:
@@ -20,10 +21,10 @@ $p__color: rgb(37, 37, 37);
 $span__colors: (
   span1: #eb1d49,
   span2: #aa2068,
-  span3: #924F96,
+  span3: #924f96,
   span4: #5c46d6,
   span5: #480c5f,
-  span6: #5597c0
+  span6: #5597c0,
 );
 
 /********** SIZES **********/
@@ -36,7 +37,7 @@ $heading__sizes: (
   h3: clamp(1.8rem, 3.5vw, 4rem),
   h4: clamp(1.6rem, 3vw, 3.5rem),
   h5: clamp(1.4rem, 2.5vw, 3rem),
-  h6: clamp(1.2rem, 2vw, 2.5rem)
+  h6: clamp(1.2rem, 2vw, 2.5rem),
 );
 
 // Paragraphs:
