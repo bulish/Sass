@@ -27,6 +27,14 @@ $span__colors: (
   span6: #5597c0,
 );
 
+// Boxes:
+
+$boxes__colors: (
+  box1: #b6eef5,
+  box2: #ebe9e4,
+);
+
+
 /********** SIZES **********/
 
 // Headings:
@@ -47,3 +55,9 @@ $p__size: clamp(1rem, 1vw, 2rem);
 // Span:
 
 $span__size: clamp(1.05rem, 1.1vw, 2.3rem);
+
+// Boxes:
+
+$box__container__padding: calc(1vw + 1rem);
+$boxes__padding: clamp(1.25rem, 1vw, 4rem);
+$boxes__margin: clamp(0.7rem, 1.5vw, 2rem);

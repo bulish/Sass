@@ -1,0 +1,29 @@
+@import "../variables/variables";
+
+@mixin flexCenter($direction) {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: $direction;
+}
+
+.box__container {
+    @include flexCenter(row);
+    padding: $box__container__padding;
+    @each $key, $value in $boxes__colors {
+        .#{$key} {
+            background-color: $value;
+            border: 2px solid black;
+            border-radius: 1rem;
+            padding: $boxes__padding;
+            box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+            margin: $boxes__margin;
+        }
+    }
+}
+
+@media screen and (max-width: 950px) {
+    .box__container {
+        @include flexCenter(column);
+    }
+}
